@@ -9,6 +9,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants';
+// skills
+import TechStack from '../components/Skills';
 
 
 const Banner = () => {
@@ -41,14 +43,13 @@ const Banner = () => {
                 2000,
                 'Designer',
                 2000,
-                'Youtuber',
-                2000,
               ]}
-                speed={50}
+                speed={40}
                 className='text-accent'
                 wrapper='span'
                 repeat={Infinity}
               />
+              <TechStack />
             </motion.div>
             <motion.p
               variants={fadeIn('up', 0.3)}
@@ -56,9 +57,9 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
-              lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
             </motion.p>
-            <motion.div
+            {/* <motion.div
               variants={fadeIn('up', 0.6)}
               initial="hidden"
               whileInView={'show'}
@@ -69,7 +70,7 @@ const Banner = () => {
               <a href='#' className='text-gradient btn-link font-secondary'>
                 My Portfolio
               </a>
-            </motion.div>
+            </motion.div> */}
             {/* socials */}
             <motion.div
               variants={fadeIn('up', 0.7)}
@@ -78,13 +79,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto
             lg:mx-0'>
-              <a href='#'>
-                <FaYoutube />
-              </a>
-              <a href='#'>
+              <a href='https://github.com/BryanBV03'>
                 <FaGithub />
               </a>
-              <a href='#'>
+              <a href='https://www.linkedin.com/in/brayan-bravo-valencia-703736193/'>
                 <FaLinkedin />
               </a>
             </motion.div>
@@ -95,6 +93,7 @@ const Banner = () => {
             initial="hidden"
             whileInView={'show'}
             className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
+            {/* cambiar */}
             <img src={Image} alt='' />
           </motion.div>
         </div>

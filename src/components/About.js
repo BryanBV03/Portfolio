@@ -36,10 +36,10 @@ const About = () => {
             className='flex-1 '>
 
             <h2 className='h2 text-accent font-secondary'>About me.</h2>
-            <h3 className='h3 mb-4 font-secondary'>I'm a Full Stack Developer with over 5 years of experience.</h3>
-            <p className='mb-6 font-secondary'>lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+            <h3 className='h3 mb-4 font-secondary'>I'm a Full Stack Developer.</h3>
+            <p className='mb-6 font-secondary'>I am a passionate web developer, with experience in technologies such as React, Python, and SQL. I have worked on several projects, obtaining a Full Stack certification and honing my skills in web application development. Furthermore, I am always looking for new challenges and opportunities to keep growing professionally in dynamic environments. In addition, I stand out for my ability to collaborate efficiently in teams and provide solutions that optimize processes, with the aim of generating a positive impact on each project in which I participate....</p>
             {/* stats */}
-            <div className='flex gap-x-6 lg:gap-x-10 mb-12 '>
+            {/* <div className='flex gap-x-6 lg:gap-x-10 mb-12 '>
               <div>
                 <div className='text-[40px] font-secondary text-gradient mb-2 '>
                   {inView ? <CountUp start={0} end={13} duration={3} /> : null}
@@ -75,7 +75,7 @@ const About = () => {
               <a href='#' className='text-gradient  btn-link font-secondary'>
                 My Portfolio
               </a>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
